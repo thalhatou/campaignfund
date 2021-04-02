@@ -5,7 +5,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                 {{ Auth::user()->name }} You're Welcome back !
+                 {{ Auth::user()->name }} You're Welcome  !
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                     <td class="px-4 py-3">
                           <form action="{{ route('campaign.destroy',$campaign->id) }}" method="POST">
                          <div class="flex items-center space-x-4 text-sm">
-                          <a class="btn btn-info" href="{{ route('campaign.show',$campaign->id) }}">Preview</a>
+                          <a class="inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-indigo-600 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-indigo-500 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-indigo-600" href="{{ route('campaign.show',$campaign->id) }}">Preview</a>
                         <a href="{{ route('campaign.edit',$campaign->id) }}"
                           class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                           aria-label="Edit">

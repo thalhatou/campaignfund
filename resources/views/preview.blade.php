@@ -24,9 +24,8 @@
                         Donate
                     </a>
 
-           <a href="" type="button" class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-green-600 border border-transparent rounded-full md:w-auto hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
-                        Share Now
-                    </a>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
 
       </div>
          <div class="bg-blue-500 w-16 text-center p-2 mt-8">
@@ -39,7 +38,7 @@
   </div>
 </section>
 @include('layouts.footer')
-
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60660bdb0d2b07ca"></script>
+
 @endsection

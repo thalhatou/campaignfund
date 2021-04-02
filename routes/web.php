@@ -13,11 +13,14 @@ use App\Http\Controllers\homeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
+Route::get('/',[homeController::class,"showCampaignsOnHome"]);
 Route::middleware(['auth'])->group(function () {
 Route::resource('campaign', 'App\Http\Controllers\campaignController');
 });
 
-Route::get('/',[homeController::class,"showCampaignsOnHome"]);
 
 Route::get('/donate', function () {
     return view('campaign.donation');
@@ -26,6 +29,10 @@ Route::get('/donate', function () {
 
 Route::get('/how-it-works', function () {
     return view('how-it-work');
+});
+
+Route::get('/pay-status', function () {
+    return view('pay-status');
 });
 
 

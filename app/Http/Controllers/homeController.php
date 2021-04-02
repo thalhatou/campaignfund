@@ -13,10 +13,10 @@ class homeController extends Controller
         return view('index', compact('campaigns'));
     }
 
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
     //return all campaings on the dashbaord
     public function index() {
         //get campaigns based on the user login
