@@ -27,10 +27,10 @@
       <div class="w-full md:w-1/2 md:px-3">
         <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
           <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
-            <span class="block xl:inline">Beautiful Pages to</span>
+            <span class="block xl:inline">Help Someone in need to</span>
             <span class="block text-indigo-600 xl:inline">Make a change!</span>
           </h1>
-          <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">It's never been easier to build beautiful websites that convey your message and tell your story.</p>
+          <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">Be the Change you want to see around</p>
           <div class="relative flex flex-col sm:flex-row sm:space-x-4">
             <a href="{{ route('register') }}" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
               Start CampaignFund
@@ -60,15 +60,25 @@
 
         <div class="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
              @foreach ($campaigns as $campaign)
-            <div class="relative flex flex-col border-t-4 border-b-4 border-indigo-600 items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 sm:rounded-xl">
-                <h4 class="text-xl font-medium text-green-600">{{ $campaign->title }}</h4>
+            <div class="relative flex flex-col border-t-4 border-b-4
+border-indigo-600 items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 sm:rounded-xl">
+<div class="flex w-64 items-center rounded-lg shadow-lg mb-4 flex bg-indigo-500 p-4 text-white">
+  <div class="w-64">
+  <a href="{{ route('campaign.show',$campaign->id) }}">
+        <h4  class="mb-2 font-bold">{{ $campaign->title }}</h4>
+  </a>
+  </div>
+</div>
                 <p class="text-base text-center text-gray-500">{{ Str::limit($campaign->description, 100) }}!</p>
-                  <a class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-green-600 border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
-                        {{ $campaign->amount}}
+
+
+                 <a  type="button" class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-indigo-600 border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
+{{ $campaign->duration}}
                     </a>
-                 <a href="{{ route('campaign.show',$campaign->id) }}" type="button" class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-indigo-600 border border-transparent rounded-full md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
-                        See Campaign
-                    </a>
+                                    <div class="shadow w-full bg-grey-light">
+    <div class="bg-blue-500 text-xs leading-none py-1 text-center text-white" style="width: 70%"></div>
+  </div>
+                     <b>2500XAF raised of</b>{{ $campaign->amount}} XAF
 
             </div>
           @endforeach
