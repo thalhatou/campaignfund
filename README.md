@@ -24,7 +24,7 @@ Then, open up the .env file and update your DB_DATABASE, DB_USERNAME, and DB_PAS
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=wave
+DB_DATABASE=campaigndb
 DB_USERNAME=root
 DB_PASSWORD=
 ```
