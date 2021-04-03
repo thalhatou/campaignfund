@@ -53,7 +53,7 @@
             © 2021 CampaignFund, Inc. All rights reserved.
         </p>
           <p class="mt-8 text-base leading-6 text-center text-gray-400">
-          Build With ❤️ in by Thalhatou Yahya
+          Build With ❤️ by Thalhatou Yahya
         </p>
     </div>
 </section>
