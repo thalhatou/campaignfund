@@ -6,16 +6,18 @@
         <meta name="csrf-token" content="{{ csrf_token() }}"
 
         <title>{{ config('app.name', 'campaignFund') }}</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
         <script src="https://unpkg.com/feather-icons"></script>
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        
 
         <!-- Styles -->
-        <link rel="stylesheet" href="https://campaignfund.herokuapp.com/css/app.css">
+        <!-- <link rel="stylesheet" href="https://campaignfund.herokuapp.com/css/app.css"> -->
 
         <!-- Scripts -->
-        <script src="https://campaignfund.herokuapp.com/js/app.js" defer></script>
+        <!-- <script src="https://campaignfund.herokuapp.com/js/app.js" defer></script> -->
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
